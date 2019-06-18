@@ -1,12 +1,27 @@
 /*REGOLE GENERALI*/
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Sailec-Medium,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-family: Sailec-Medium, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+.button_nav {
+    padding: 3px 8px;
+    color: blue;
+    background-color: #00D7D2;
+    border-radius: 5px;
+}
+
+hr {
+    margin: 5px 0;
+    padding: 0;
+    opacity: 0.8;
 }
 
 /*CLEAR*/
+
 .row::after {
     clear: both;
     content: '';
@@ -14,105 +29,135 @@
 }
 
 /*NAVBAR*/
-/*TOP-NAV*/
+
 .navbar {
-height: 100px;
-width: 100%;
-position: fixed;
-background-color: white;
-top: 0;
-left: 0;
+    top: 0;
+    left: 0;
+    height: 100px;
+    width: 100%;
+    background-color: white;
 }
+
 .top_nav {
-    margin: 10px 15px;
-    height: 25px;
-}
-.top_nav_left {
-    width: 80%;
-    float: left;
-}
-.top_nav_right {
-    width: 20%;
-    float: left;
-}
-
-.top_button {
-    background-color: #00D7D2;
-    padding: 4px 8px;
-    border-radius: 5px;
-    font-size: 10px;
-    text-align: center;
-    
-}
-
-.topnav_link {
-    font-size: 13px;
-    color: gray;
-    text-decoration: none;
-    padding-top: 20px;
-}
-
-.topnav_list li {
-    display: inline-block;
-    padding: 0 15px;
-    font-size: 13px;
-}
-
-.topnav_list a {
-    text-decoration: none;
-    color: grey;
-}
-
-.rgb_hr {
-   opacity: 0.3;
-}
-/*BOTTOM NAV*/
-
-.bottom_nav_left {
-width: 20%;
-float: left;
-padding: 5px;
-}
-
-.bottom_nav_right {
-width: 72%;
-float: left;
-height: 100%;
-}
-
-.bottom_nav_button {
-width: 8%;
-float: left;
-height: 100%;
-}
-
-.bottom_nav_right ul li {
-    display: inline-block;
-    padding: 5px;
+    height: 30px;
     margin-top: 10px;
 }
 
-.bottom_nav_right a {
+.bottom_nav {
+    height: 50px;
+}
+
+.top_nav ul li {
     text-decoration: none;
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.top_nav a {
+    color: grey;
+    text-decoration: none;
+}
+
+.bottom_nav ul li {
+    display: inline-block;
+    padding: 0 30px;
+    margin-top: 10px;
+}
+
+.bottom_nav a {
+    font-size: 15px;
     color: black;
 }
 
-.bottomnav_button {
-    color: blue;
-    padding: 5px 10px;
+.sign_up a {
     border: 1px solid blue;
-    display: inline-block;
     border-radius: 5px;
-    margin-top: 9px;
+    padding: 10px 15px;
+    color: blue;
+    transition: 0.5s;
+    text-decoration: none;
 }
+
+.sign_up a:hover {
+    background-color: blue;
+    color: white;
+}
+
 /*HEADER*/
+
 header {
     background-color: lightblue;
     height: 700px;
+    background-image: url(img/backgr.jpg);
+    background-image: cover;
     margin-top: 100px;
 }
 
+.left_head {
+    margin-top: 150px;
+    color: white;
+}
+
+.right_head {
+    margin-top: 150px;
+}
+
+.left_head h1 {
+    font-size: 65px;
+}
+
+.left_head p {
+    font-size: 25px;
+    opacity: 0.8;
+}
+
+.registration {
+    height: 400px;
+    width: 350px;
+    background: white;
+    padding: 5px 38px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.form-control {
+    margin-top: 20px;
+    margin-bottom: 13px;
+    height: 40px;
+}
+
+.account a,
+.google a{
+    padding: 10px 36px;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+}
+
+
+.google a:hover {
+    background-color: rgb(201, 201, 201 , 0.2)
+}
+.account a:hover {
+    background-color: #0CB863;
+    opacity: 0.8;
+}
+.account a {
+    background: #0CB863;
+    border-radius: 5px;
+    color: white;
+    font-size: 17px;
+}
+
+.google a {
+    background: white;
+    border-radius: 4px;
+    box-shadow: -1px 1px 2px rgb(201, 201, 201);
+    font-size: 17px;
+    margin-top: 20px;
+}
 /*SECTION*/
+
 section {
     background-color: grey;
     height: 650px;
@@ -120,8 +165,8 @@ section {
 }
 
 /*FOOTER*/
+
 footer {
     height: 550px;
     background-color: lightblue;
-
 }
