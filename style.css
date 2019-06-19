@@ -206,11 +206,46 @@ opacity: 0.8;
     font-size: 18px;
     color: blue;
 }
+/*SEZIONE DEPLOY*/
+.deploy {
+    height: 1150px;
+    background-color: white;
+}
+
+.dep_title {
+    text-align: center;
+    padding: 50px 0;
+    color: #031B4E;
+    
+}
+
+.dep_title span {
+    font-size: 20px;
+    opacity: 0.8;
+    display: block;
+}
+
+.dep_list ul li{
+    list-style: none;
+    font-size: 20px;
+    padding-left: 20px;
+    border-left: 2px solid lightgrey;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+.dep_list a {
+    text-decoration: none;
+}
+
+.dep_list ul li:hover {
+    border-left:2px solid blue;
+    color: black;
+}
 /*SECTION*/
 
 section {
     background-color: grey;
-    height: 650px;
+    height: 700px;
 }
 
 /*FOOTER*/
